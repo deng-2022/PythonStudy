@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="webkit" name="renderer">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="baidu-site-verification" content="code-BrY2DIlgVa">
+    <meta name="360-site-verification" content="6c84a5724c6cfea1326d1b6ed5a8b351">
+    <title>即时设计 - 可实时协作的专业 UI 设计工具</title>
+    <meta name="description"
+          content="即时设计是一款支持在线协作的专业级 UI 设计工具，支持 Sketch、Figma、XD 格式导入，海量优质设计资源即拿即用。支持创建交互原型、获取设计标注，为产设研团队提供一站式协同办公体验。">
+    <meta name="keywords"
+          content="jsdesign,在线协作设计,UI设计,可协作sketch,免费版sketch,国内版figma,中国版figma,sketch资源,sketch源文件,PSD,XD,设计规范,设计资源,figma中文版,标注切图,交互原型,团队协作">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="xiaopiu icon" href="https://img.js.design/assets/webImg/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="即时设计">
+    <link rel="apple-touch-icon" href="https://img.js.design/assets/img/60c0446dfbc9478b602e15f2.png">
+    <style>body, html{
+      background: #1A1B1C;
+    }
+    body.wap, html.wap{
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior: none;
+      position: fixed;
+    }
+    body > #root {
+      z-index: 9999999;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    #root>.main{
+      /*
+        千万不要去掉，
+        开发环境不需要注释下行代码了，已经通过JS动态修改了
+      */
+      opacity: 0;
+    }
+
+    /* 新的loading */
+    .loading-panel {
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+      background: red;
+    }
+
+    .loading-panel .loading-logo {
+      position: fixed;
+      opacity: 0.3;
+      width: 200px;
+      transform: scale(1.2);
+      animation: breath 3.2s ease-in-out infinite;
+    }
+
+    .hljs *[class^="language-"] {
+      font-family: 'Monaco','DejaVu Sans Mono' !important;
+    }
+
+    @keyframes breath {
+      50% {
+        opacity: 0.65;
+      }
+    }
+
+    .loading-panel .loading {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #1A1B1C;
+    }
+
+    </style>
+    <link rel="stylesheet" href="https://img.js.design/assets/css/atom-one-dark.min.css">
+    <script src="https://g.alicdn.com/AWSC/AWSC/awsc.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11050375808"></script>
+    <script>
+        function gtag_report_conversion(){return gtag("event","conversion",{send_to:"AW-11050375808/BqlVCO_3uoYYEIC1nZUp"}),!1}function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","AW-11050375808"),window.jsServerUrl="https://ds.js.design",window.jsUrl="https://js.design",window.jsStaticUrl="https://img.js.design",window.jsAgentUrl="http://127.0.0.1:65433",window.location.host.includes("js.design")?document.write('<script src="https://img.js.design/assets/Resources/xframe/1.2.0/jsframe.js"><\/script>'):document.write(`<script src="${window.jsServerUrl}/assets/Resources/xframe/1.2.0/jsframe.js"><\/script>`)
+
+    </script>
+    <script async src="https://s1.hdslb.com/bfs/cm/cm-sdk/static/js/track-collect.js"></script>
+    <script type="text/javascript">window.GA_UID=null</script>
+    <script>
+        var isDingtalk=navigator&&/DingTalk/.test(navigator.userAgent);isDingtalk||function(t,e,a,n,g){t[n]=t[n]||[],t[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var r=e.getElementsByTagName(a)[0],s=e.createElement(a);s.async=!0,s.src="https://www.googletagmanager.com/gtm.js?id=GTM-MLFNPL6",r.parentNode.insertBefore(s,r)}(window,document,"script","dataLayer")
+
+    </script>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLFNPL6" height="0" width="0"
+                style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <meta name="wpk-bid" content="dta_2_72266">
+    <script>
+        var isDingtalk=navigator&&/DingTalk/.test(navigator.userAgent);const isPc="Mac68K"===window.navigator.platform||"MacPPC"===window.navigator.platform||"Macintosh"===window.navigator.platform||"MacIntel"===window.navigator.platform||"Win32"==window.navigator.platform,isMobile=navigator.userAgent.match(/iPhone|iPad|iPod|Android/i);isDingtalk&&isPc&&!isMobile&&function(t,i,a,o){var n=i.createElement("script"),r=i.getElementsByTagName("script")[0];n.type="text/javascript",n.crossorigin=!0,n.onload=function(){t[o]||(t[o]=new t.wpkReporter({bid:"dta_2_72266"})),t[o].installAll()},r.parentNode.insertBefore(n,r),n.src="https://g.alicdn.com/woodpeckerx/jssdk??wpkReporter.js"}(window,document,0,"__wpk")
+
+    </script>
+</head>
+<body>
+<div id="root">
+    <div class="loading-panel">
+        <div class="loading" id="default-loading">
+            <svg width="140" height="37" viewBox="0 0 140 37" fill="none" xmlns="http://www.w3.org/2000/svg"
+                 class="loading-logo">
+                <path id="loading-logo-path" fillRule="evenodd" clipPath="evenodd"
+                      d="M36.0721 8.66858V27.4035C36.0721 32.1944 32.1944 36.0721 27.4035 36.0721H8.66858C6.36898 36.0721 4.17084 35.159 2.53632 33.5358C0.913075 31.9013 0 29.7031 0 27.4035V8.66858C0 6.36898 0.913075 4.17084 2.53632 2.53632C4.17084 0.913075 6.36898 0 8.66858 0H27.4035C29.7031 0 31.9013 0.913075 33.5358 2.53632C35.159 4.17084 36.0721 6.36898 36.0721 8.66858ZM28.9197 19.3602L21.818 6.01349C21.7165 5.83313 21.57 5.68658 21.3896 5.59641C20.8936 5.32586 20.2737 5.5175 20.0144 6.01349L18.0304 9.72215L16.0577 6.01349C15.9675 5.83313 15.821 5.68658 15.6406 5.59641C15.1446 5.32586 14.5247 5.5175 14.2541 6.01349L7.15242 19.3602C6.9157 19.8111 6.9157 20.3522 7.15242 20.8031L11.6502 29.2575C11.9207 29.7534 12.4392 30.0691 13.0141 30.0691H23.058C23.6329 30.0691 24.1514 29.7534 24.4219 29.2575L28.9197 20.8031C29.1564 20.3522 29.1564 19.8111 28.9197 19.3602ZM19.4661 17.8774L20.9202 15.1495L22.2729 17.6857C22.6788 18.3846 22.9042 19.2075 22.9042 20.0868C22.9042 22.7697 20.7286 24.9565 18.0344 24.9565C15.3516 24.9565 13.1647 22.7697 13.1647 20.0868C13.1647 19.6133 13.2323 19.1624 13.3563 18.7341L13.4014 18.6101L13.4127 18.5763C13.4916 18.3057 13.6043 18.0465 13.7396 17.7872L16.5803 12.4553L15.6108 10.6179C15.4756 10.3699 15.1712 10.2797 14.9119 10.4037C14.8218 10.4601 14.7541 10.5277 14.709 10.6179L9.86184 19.7148C9.73785 19.9403 9.73785 20.2108 9.86184 20.4362L13.4127 27.0983C13.548 27.3463 13.8072 27.5041 14.089 27.5041H21.9799C22.2617 27.5041 22.5209 27.3463 22.6562 27.0983L26.2071 20.4362C26.3311 20.2108 26.3311 19.9403 26.2071 19.7148L21.3599 10.6179C21.2359 10.3699 20.9202 10.2797 20.6722 10.4037C20.5821 10.4601 20.5144 10.5277 20.4581 10.6179L19.4886 12.4553L18.0344 15.1833V15.172L16.0279 18.937V18.9483C15.9152 19.1399 15.8363 19.3541 15.7799 19.5908V19.6246C15.7461 19.7824 15.7348 19.929 15.7348 20.0755V20.0868C15.7348 21.3606 16.7606 22.3864 18.0344 22.3864C19.297 22.3864 20.3228 21.3831 20.3453 20.1206V20.0755H20.3341C20.3341 19.7035 20.2439 19.3315 20.0635 18.9934L19.4661 17.8774ZM125.021 10.2862C124.153 9.24464 122.219 7.70707 120.855 6.64069L118.995 8.52546C120.384 9.69104 122.194 11.3526 123.037 12.4438L125.021 10.2862ZM123.682 23.554V14.0062H117.06V16.9325H120.681V24.3972C120.681 25.5132 119.888 26.3316 119.342 26.7035C119.813 27.3483 120.532 28.6875 120.78 29.4563C121.252 28.8363 122.169 28.1171 127.154 24.5212C126.831 23.926 126.385 22.6612 126.211 21.818L123.682 23.554ZM140 14.155H134.296V6.49189H131.122V14.155H125.17V17.2301H131.122V29.5555H134.296V17.2301H140V14.155ZM73.9105 10.9557V15.2708H70.9346V10.9557H73.9105ZM70.9346 22.3387V17.85H73.9105V22.3387H70.9346ZM76.6633 8.32697H68.157V26.9762H70.9346V24.9923H76.6633V8.32697ZM90.4766 10.9557H87.9471V6.5662H84.9463V10.9557H77.6056V13.8821H84.9463V25.5875C84.9463 26.1083 84.7479 26.2819 84.2023 26.2819C83.6815 26.2819 81.8464 26.2819 80.1104 26.2075C80.5568 27.0506 81.028 28.365 81.152 29.1834C83.6319 29.2082 85.3679 29.1338 86.4591 28.6626C87.5751 28.1914 87.9471 27.4226 87.9471 25.6371V13.8821H90.4766V10.9557ZM80.8371 16.27L80.8371 16.27L80.8359 16.2682L80.8311 16.2616C80.6417 15.9964 80.458 15.7391 80.284 15.494L77.8536 16.7836C79.044 18.594 80.6312 21.0243 81.3752 22.4627L83.9791 20.95C83.3004 19.7198 81.9686 17.8547 80.8371 16.27ZM51.4659 10.2614V12.3693H47.002V10.2614H51.4659ZM47.002 17.2549V14.9981H51.4659V17.2549H47.002ZM49.1347 21.7436C49.5067 22.3884 49.9035 23.1076 50.3003 23.8267L47.002 24.7691V19.8836H54.417V7.63263H43.9764V24.2731C43.9764 25.2403 43.3812 25.7363 42.8356 26.0091C43.3068 26.7283 43.8028 28.1667 43.9764 29.0099C44.6708 28.5387 45.6628 28.1419 51.4907 26.3067C51.8627 27.0755 52.1603 27.8195 52.3587 28.4395L55.1114 26.9763C54.4418 25.2403 52.9291 22.5372 51.6891 20.5036L49.1347 21.7436ZM64.6841 7.80622H55.8058V29.5555H58.7818V10.5094H61.7825V21.9916C61.7825 22.314 61.6585 22.4132 61.3609 22.4132C61.0881 22.438 60.1705 22.438 59.2777 22.3884C59.6497 23.1572 59.9969 24.3723 60.0961 25.1659C61.6833 25.1659 62.8241 25.1411 63.6177 24.6699C64.4609 24.1739 64.6841 23.4052 64.6841 22.066V7.80622ZM108.975 9.91426H105.652V9.96386C105.652 12.419 104.883 15.1966 101.362 16.8333C101.015 16.263 99.9483 15.0974 99.4027 14.7006C102.527 13.3614 102.899 11.5758 102.899 9.86466V7.18631H111.778V12.5926C111.778 13.3118 111.827 13.6094 112.199 13.6094H113.464C113.861 13.6094 114.481 13.535 114.803 13.4358C114.827 13.6691 114.847 13.9291 114.869 14.1969L114.869 14.1971L114.869 14.1973C114.916 14.7835 114.966 15.4066 115.051 15.8662C114.654 16.0398 114.059 16.0646 113.514 16.0646H111.926C109.471 16.0646 108.975 15.023 108.975 12.5678V9.91426ZM95.7075 6.69031C97.0219 7.7815 98.8571 9.39347 99.6755 10.4599L97.6667 12.4934C96.8731 11.4022 95.1371 9.66626 93.8228 8.50068L95.7075 6.69031ZM97.9891 14.0062V23.4052L100.122 21.5949C100.37 22.3884 100.866 23.5044 101.238 24.0252L101.229 24.0326L101.229 24.0327C96.6489 27.9196 95.8312 28.6135 95.3851 29.2083C95.1619 28.4891 94.3932 27.274 93.8972 26.7036C94.4428 26.3068 95.1371 25.4636 95.1371 24.2732V16.8333H92.186V14.0062H97.9891ZM107.264 23.43C108.455 22.438 109.446 21.2477 110.19 19.8589H104.239C104.958 21.1981 105.999 22.4132 107.264 23.43ZM111.629 17.1061L112.125 16.9821L113.91 17.7757C113.018 20.8509 111.554 23.2068 109.645 24.9924C111.282 25.8852 113.216 26.53 115.398 26.9516C114.754 27.5964 113.96 28.7619 113.588 29.5803C111.133 28.9851 109 28.0923 107.19 26.8276C105.206 28.0675 102.924 28.9107 100.395 29.5059C100.122 28.7371 99.5267 27.5716 99.0555 26.9516C101.213 26.5548 103.197 25.9348 104.908 24.9924C103.569 23.6284 102.403 22.0413 101.511 20.2061L102.503 19.8589H100.717V17.1061H111.629Z"
+                      fill="#fff"/>
+            </svg>
+        </div>
+    </div>
+</div>
+<script>
+    const pathname=window.location.pathname;var userSet=window.localStorage.getItem("userSet");const theme=(userSet=userSet?JSON.parse(userSet):{themeMode:"DARK"})&&userSet.themeMode||"DARK";["/user"].includes(pathname)?(document.getElementById("default-loading").style.background="#242526",document.getElementById("loading-logo-path").setAttribute("fill","#fff")):-1===["/home","/","/square","/resourceDetails","/practice","/activity","/work","/scene","/recommend","/help","/tutorial/","/update","/download","/about","/terms","/privacyPolicy","/login","/ti","/antd"].indexOf(pathname)&&"LIGHT"!=theme||(document.getElementById("default-loading").style.background="#EBECED",document.getElementById("loading-logo-path").setAttribute("fill","hsl(216deg 30% 20%)"),document.body&&(document.body.style.background="#EBECED"))
+
+</script>
+<script>
+    var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?ddd59aa40de002d720cfbf59998d94ac";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()
+
+</script>
+<script>
+    class EllipsisParagraph extends HTMLParagraphElement{constructor(){super(),this.maxLength=0,this.ellipsis=""}connectedCallback(){this.maxLength=Number(this.dataset.length),this.ellipsis=this.dataset.ellipsis??"",this.getAttribute("classname")&&this.setAttribute("class",this.getAttribute("classname")),this.removeAttribute("classname"),this.render()}render(){this.innerHTML=this.innerHTML.length<this.maxLength?this.innerHTML:this.innerHTML.slice(0,this.maxLength)+this.ellipsis}}class EllipsisHeading extends HTMLHeadingElement{constructor(){super(),this.maxLength=0,this.ellipsis=""}connectedCallback(){this.maxLength=Number(this.dataset.length),this.ellipsis=this.dataset.ellipsis??"",this.getAttribute("classname")&&this.setAttribute("class",this.getAttribute("classname")),this.removeAttribute("classname"),this.render()}render(){this.innerHTML=this.innerHTML.length<this.maxLength?this.innerHTML:this.innerHTML.slice(0,this.maxLength)+this.ellipsis}}customElements.define("ellipsis-paragraph",EllipsisParagraph,{extends:"p"}),customElements.define("ellipsis-heading1",EllipsisHeading,{extends:"h1"})
+
+</script>
+<script>window.isProduction=!0</script>
+<script type="text/javascript" src="https://img.js.design/assets/static/runtime.1354c61a43a271f10a1e.js"></script>
+<script type="text/javascript" src="https://img.js.design/assets/static/chunk.app.1b4fabb68d729c35c94a.js"></script>
+<script>
+    !function(e,n){"object"==typeof exports&&"undefined"!=typeof module?module.exports=n():"function"==typeof define&&define.amd?define(n):(e=e||self).WwLogin=n()}(this,(function(){"use strict";function e(e,n){if(!(e instanceof n))throw new TypeError("Cannot call a class as a function")}function n(e,n){for(var t=0;t<n.length;t++){var o=n[t];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}var t={sso:"/wwopen/sso/qrConnect",tww:"/login/wwLogin/sso/qrConnect",native:"/native/sso/qrConnect"};return function(){function o(){var n=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};e(this,o),n.version="1.2.4",this.options=n,this.url=this.getUrl(n),this.init(this.url)}var i,s;return i=o,(s=[{key:"init",value:function(e){this.options.is_mobile?window.location=e:this.createFrame(e)}},{key:"getUrl",value:function(e){var n=["login_type=jssdk"];for(var o in e)e[o]&&"id"!==o&&n.push("".concat(o,"=").concat(e[o]));e.business_type=e.business_type||"sso";var i=t[e.business_type];if(!i)throw new Error("Argument business_type not match. Current version is ".concat("1.2.4","."));return"".concat("https://open.work.weixin.qq.com").concat(i,"?").concat(n.join("&"))}},{key:"createFrame",value:function(e){var n=document.createElement("iframe"),t=document.getElementById(this.options.id);n.src=e,n.frameBorder="0",n.allowTransparency="true",n.scrolling="no",n.width="300px",n.height="400px",t.innerHTML="",t.appendChild(n),n.onload=function(){n.contentWindow.postMessage&&window.addEventListener&&(window.addEventListener("message",(function(e){var n=e.data;"string"==typeof n&&/^http/.test(n)&&n&&e.origin.indexOf("work.weixin.qq.com")>-1&&(window.location.href=n)})),n.contentWindow.postMessage("ask_usePostMessage","*"))}}}])&&n(i.prototype,s),o}()}))
+
+</script>
+</body>
+</html>
