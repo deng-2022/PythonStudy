@@ -2,5 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/程序打包/界面编程/实现一个简单的笔记本/python_gui_tkinter" vcs="Git" />
   </component>
 </project>

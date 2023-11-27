@@ -3,7 +3,7 @@ import cv2
 
 # 读入要检测的图像
 face_image = cv2.imread("pic1.JPG")
-# face_image = cv2.imread("微信图片_2023020400133910.jpg")
+# face_image = cv2.imread("pic2.JPG")
 
 # 加载人脸检测器
 face_model = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')

@@ -1,6 +1,5 @@
 # 主文件
 import excel_handler
-from 实体类 import *
 
 
 def read_excel(file_path):
